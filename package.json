@@ -1,0 +1,11 @@
+{
+  "name": "pathfinder-wasm",
+  "packageManager": "yarn@4.5.0",
+  "scripts": {
+    "emscripten:install:win": "./vendors/emscripten/emsdk install latest && ./vendors/emscripten/emsdk activate latest && ./vendors/emscripten/emsdk_env.bat",
+    "emscripten:install:sh": "./vendors/emscripten/emsdk install latest && ./vendors/emscripten/emsdk activate latest && source ./vendors/emscripten/emsdk_env.sh"
+  },
+  "workspaces": [
+    "src/*"
+  ]
+}
